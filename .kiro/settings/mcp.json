@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "acmeops": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "acmeops_server", "--transport", "stdio"],
+      "disabled": false
+    },
+    "summarizer_server": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "summarizer_server"],
+      "disabled": false
+    },
+    "acmeops-http": {
+      "url": "http://localhost:8000/mcp",
+      "disabled": true
+    }
+  }
+}
